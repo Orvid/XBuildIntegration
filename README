@@ -1,0 +1,5 @@
+This repository contains the source and a single jar file containing the compiled plugin.
+
+This plugin adds support for Mono's XBuild utility as a build method.
+
+The source code of the plugin is in the NetBeans Project format.

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 1.5.0_17-b04 (Sun Microsystems Inc.)
+Bundle-Name: XBuild Support
+Bundle-SymbolicName: com.zutubi.pulse.core.commands.xbuild; singleton :=true
+Bundle-Description: Support for the XBuild build tool, in the form of a command and post-processor.
+Bundle-Vendor: Orvid
+Bundle-Version: 2.3.9
+Require-Bundle: com.zutubi.pulse.core.commands.core; bundle-version="(2.3.0,2.4.0)"
+
