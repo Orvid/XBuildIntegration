@@ -6,6 +6,7 @@ import com.zutubi.pulse.core.tove.config.annotations.BrowseScmFileAction;
 import com.zutubi.tove.annotations.Form;
 import com.zutubi.tove.annotations.SymbolicName;
 import com.zutubi.util.StringUtils;
+
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -13,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 @SymbolicName("XBuildCommandConfiguration")
-@Form(fieldOrder = {"name", "workingDir", "buildFile", "targets", "configuration", "args", "extraArguments", "postProcessors", "exe", "inputFile", "outputFile", "force"})
+@Form(fieldOrder = {"name", "workingDir", "buildFile", "targets", "configuration", "postProcessors", "exe", "inputFile", "outputFile", "force"})
 public class XBuildCommandConfiguration extends NamedArgumentCommandConfiguration
 {
     private static final String EXECUTABLE_PROPERTY = "xbuild.bin";
@@ -24,9 +25,9 @@ public class XBuildCommandConfiguration extends NamedArgumentCommandConfiguratio
     private static final String CONFIGURATION_PROPERTY = "Configuration";
 
     @BrowseScmFileAction(baseDirField = "workingDir")
-    private String buildFile;
-    private String targets;
-    private String configuration;
+    private String buildFile = "";
+    private String targets = "";
+    private String configuration = "Debug";
 
     @Addable("build-property")
     private Map<String, BuildPropertyConfiguration> buildProperties = new LinkedHashMap();

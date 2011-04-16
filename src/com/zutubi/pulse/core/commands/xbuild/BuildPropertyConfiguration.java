@@ -10,7 +10,7 @@ import com.zutubi.validation.annotations.Required;
 public class BuildPropertyConfiguration extends AbstractNamedConfiguration
 {
     @Required
-    private String value;
+    private String value = "";
 
     public BuildPropertyConfiguration()
     {
